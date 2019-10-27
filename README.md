@@ -1,4 +1,5 @@
-<!-- ALL-CONTRIBUTORS-BADGE:START - Do not remove or modify this section -->[![All contributors](https://img.shields.io/badge/all_contributors-1-orange.svg)](#contributors)<!-- ALL-CONTRIBUTORS-BADGE:END -->
+<!-- ALL-CONTRIBUTORS-BADGE:START - Do not remove or modify this section -->
+[![All contributors](https://img.shields.io/badge/all_contributors-1-orange.svg)](#contributors)<!-- ALL-CONTRIBUTORS-BADGE:END -->
 [![Issues and pull requests labeled "Status: Help wanted"](https://img.shields.io/github/labels/Collabsalot/gatsby-starter/Status%3A%20Help%20wanted?label=label)](https://github.com/Collabsalot/gatsby-starter/labels/Status%3A%20Help%20wanted)
 [![Netlify build status](https://img.shields.io/netlify/d3b00a2e-01bf-4619-bd37-f37f48e0a6a6)](https://app.netlify.com/sites/gatsby-starter-collabsalot/deploys)
 [![License](https://img.shields.io/github/license/Collabsalot/gatsby-starter)](./LICENSE)
