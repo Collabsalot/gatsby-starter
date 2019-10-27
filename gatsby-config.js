@@ -4,6 +4,7 @@
 const config = {
   plugins: [
     /**
+     * @see https://www.gatsbyjs.org/packages/gatsby-plugin-typescript/
      * @see https://babeljs.io/docs/en/babel-plugin-transform-typescript
      * @see https://babeljs.io/docs/en/babel-preset-typescript
      */

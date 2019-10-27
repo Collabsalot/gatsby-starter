@@ -20,9 +20,7 @@ const config = (api) => {
      * @see https://github.com/gatsbyjs/gatsby/tree/master/packages/babel-preset-gatsby
      * @see https://www.gatsbyjs.org/docs/browser-support/
      */
-    presets: [
-      'babel-preset-gatsby'
-    ]
+    presets: ['babel-preset-gatsby'],
   }
 }
 
