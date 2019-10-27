@@ -1,7 +1,7 @@
 # gatsby-starter
 
-![Netlify](https://img.shields.io/netlify/d3b00a2e-01bf-4619-bd37-f37f48e0a6a6)
-![GitHub](https://img.shields.io/github/license/Collabsalot/gatsby-starter)
+[![Netlify status](https://img.shields.io/netlify/d3b00a2e-01bf-4619-bd37-f37f48e0a6a6)](https://app.netlify.com/sites/gatsby-starter-collabsalot/deploys)
+[![License](https://img.shields.io/github/license/Collabsalot/gatsby-starter)](./LICENSE)
 
 ## Features
 
