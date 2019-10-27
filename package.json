@@ -1,0 +1,30 @@
+{
+  "name": "gatsby-starter",
+  "version": "0.0.1",
+  "homepage": "https://github.com/Collabsalot/gatsby-starter#readme",
+  "bugs": {
+    "url": "https://github.com/Collabsalot/gatsby-starter/issues"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Collabsalot/gatsby-starter.git"
+  },
+  "license": "MIT",
+  "author": "Martin Rosenberg <Martin.B.Rosenberg@gmail.com> (https://martinbrosenberg.com)",
+  "scripts": {
+    "build": "gatsby build",
+    "clean": "gatsby clean",
+    "develop": "gatsby develop",
+    "docs": "gatsby plugin docs",
+    "info": "gatsby info",
+    "info:copy": "yarn info --clipboard",
+    "repl": "gatsby repl",
+    "serve": "gatsby serve",
+    "test": "echo \"Write tests! -> https://gatsby.dev/unit-testing\" && exit 1"
+  },
+  "dependencies": {
+    "gatsby": "^2.17.4",
+    "react": "^16.11.0",
+    "react-dom": "^16.11.0"
+  }
+}
