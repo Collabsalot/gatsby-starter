@@ -1,5 +1,8 @@
 # gatsby-starter
 
+![Netlify](https://img.shields.io/netlify/d3b00a2e-01bf-4619-bd37-f37f48e0a6a6)
+![GitHub](https://img.shields.io/github/license/Collabsalot/gatsby-starter)
+
 ## Features
 
 - TypeScript
