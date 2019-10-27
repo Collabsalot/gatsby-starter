@@ -1,0 +1,28 @@
+{
+  "projectName": "gatsby-starter",
+  "projectOwner": "Collabsalot",
+  "repoType": "github",
+  "repoHost": "https://github.com",
+  "files": [
+    "README.md"
+  ],
+  "imageSize": 100,
+  "commit": true,
+  "contributors": [
+    {
+      "login": "MartinRosenberg",
+      "name": "Martin Rosenberg",
+      "avatar_url": "https://avatars2.githubusercontent.com/u/2382147?v=4",
+      "profile": "https://martinbrosenberg.com/",
+      "contributions": [
+        "code",
+        "doc",
+        "ideas",
+        "infra",
+        "maintenance",
+        "projectManagement"
+      ]
+    }
+  ],
+  "contributorsPerLine": 7
+}
