@@ -1,8 +1,4 @@
-<!-- ALL-CONTRIBUTORS-BADGE:START - Do not remove or modify this section -->
-
-[![All Contributors](https://img.shields.io/badge/all_contributors-0-orange.svg?style=flat-square)](#contributors)
-
-<!-- ALL-CONTRIBUTORS-BADGE:END -->
+<!-- ALL-CONTRIBUTORS-BADGE:START - Do not remove or modify this section -->[![All Contributors](https://img.shields.io/badge/all_contributors-1-orange.svg?style=flat-square)](#contributors-)<!-- ALL-CONTRIBUTORS-BADGE:END -->
 
 [![Issues and pull requests labeled "Status: Help wanted"](https://img.shields.io/github/labels/Collabsalot/gatsby-starter/Status%3A%20Help%20wanted?label=label)](https://github.com/Collabsalot/gatsby-starter/labels/Status%3A%20Help%20wanted)
 [![Netlify build status](https://img.shields.io/netlify/d3b00a2e-01bf-4619-bd37-f37f48e0a6a6)](https://app.netlify.com/sites/gatsby-starter-collabsalot/deploys)
@@ -60,6 +56,12 @@ Contributions of any kind welcome! Thanks goes to these wonderful people ([emoji
 <!-- ALL-CONTRIBUTORS-LIST:START - Do not remove or modify this section -->
 <!-- prettier-ignore-start -->
 <!-- markdownlint-disable -->
+<table>
+  <tr>
+    <td align="center"><a href="https://martinbrosenberg.com/"><img src="https://avatars2.githubusercontent.com/u/2382147?v=4" width="100px;" alt="Martin Rosenberg"/><br /><sub><b>Martin Rosenberg</b></sub></a><br /><a href="https://github.com/Collabsalot/gatsby-starter/commits?author=MartinRosenberg" title="Code">💻</a> <a href="https://github.com/Collabsalot/gatsby-starter/commits?author=MartinRosenberg" title="Documentation">📖</a> <a href="#ideas-MartinRosenberg" title="Ideas, Planning, & Feedback">🤔</a> <a href="#infra-MartinRosenberg" title="Infrastructure (Hosting, Build-Tools, etc)">🚇</a> <a href="#maintenance-MartinRosenberg" title="Maintenance">🚧</a> <a href="#projectManagement-MartinRosenberg" title="Project Management">📆</a></td>
+  </tr>
+</table>
+
 <!-- markdownlint-enable -->
 <!-- prettier-ignore-end -->
 
