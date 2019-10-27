@@ -1,4 +1,8 @@
 /**
+ * Not using `gatsby-plugin-eslint`, as it's outdated and doesn't really
+ * accomplish anything that hasn't been taken care of already. Feel free to look
+ * into it for yourself: https://www.gatsbyjs.org/packages/gatsby-plugin-eslint/
+ *
  * @see https://eslint.org/docs/user-guide/configuring
  * @todo Put this in ./config if you can get that working with eslint-prettier.
  */
@@ -10,7 +14,6 @@ const config = {
   env: {
     browser: true,
     es2020: true,
-    jest: true,
     node: true,
   },
 

@@ -4583,11 +4583,6 @@ gatsby-page-utils@^0.0.27:
     micromatch "^3.1.10"
     slash "^3.0.0"
 
-gatsby-plugin-eslint@^2.0.5:
-  version "2.0.5"
-  resolved "https://registry.yarnpkg.com/gatsby-plugin-eslint/-/gatsby-plugin-eslint-2.0.5.tgz#be02f5aff9b7f4a37927f3f917e82ad9f3d67f09"
-  integrity sha512-7dgcNtFOGgPLseDA55DDjqqnSW+2Pe91erL6nFjLFs/vlFlT9+GbR/4zkQH9WjWOHSfCtgrUzi59cxM1rBm4kw==
-
 gatsby-plugin-page-creator@^2.1.27:
   version "2.1.27"
   resolved "https://registry.yarnpkg.com/gatsby-plugin-page-creator/-/gatsby-plugin-page-creator-2.1.27.tgz#5df6765c8c35b9ec43f4faed55878fe25b35733e"
