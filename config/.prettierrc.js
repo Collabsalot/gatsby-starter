@@ -3,7 +3,6 @@
  *
  * @see https://prettier.io/docs/en/configuration.html
  * @see https://prettier.io/docs/en/options.html
- * @todo Put this in ./config if you can get that working with eslint-prettier.
  */
 const config = {
   /**

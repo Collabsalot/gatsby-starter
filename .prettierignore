@@ -2,7 +2,7 @@
 
 tsconfig.json
 
-# Node
+# Dependencies
 
 node_modules/
 

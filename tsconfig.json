@@ -64,13 +64,14 @@
     "forceConsistentCasingInFileNames": true  /* Disallow inconsistently-cased references to the same file. */
   },
   "include": [
-    ".eslintrc.js",
+    // Directories
+    "config",
+    "src",
+    "@types",
+    // Files
     ".huskyrc.js",
     "babel.config.js",
     "gatsby-config.js",
-    "lint-staged.config.js",
-    "src",
-    "@types"
   ],
   "exclude": [".cache", "node_modules", "public"]
 }
