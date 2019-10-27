@@ -14,7 +14,7 @@ const config = {
   env: {
     browser: true,
     es2020: true,
-    node: true,
+    node: true
   },
 
   /**
@@ -30,16 +30,16 @@ const config = {
    * @type {string[]}
    */
   extends: [
-    'standard-with-typescript',
     'standard-react',
+    'standard-with-typescript',
     'plugin:import/errors',
     'plugin:import/typescript',
     'plugin:import/warnings',
-    'plugin:jsx-a11y/recommended',
-    'plugin:prettier/recommended',
-    'prettier',
-    'prettier/react',
-    'prettier/standard',
+    'plugin:jsx-a11y/recommended'
+    // 'plugin:prettier/recommended',
+    // 'prettier',
+    // 'prettier/react',
+    // 'prettier/standard',
   ],
 
   /**
@@ -49,7 +49,7 @@ const config = {
   globals: {
     __PATH_PREFIX__: true,
     Atomics: 'readonly',
-    SharedArrayBuffer: 'readonly',
+    SharedArrayBuffer: 'readonly'
   },
 
   /**
@@ -65,11 +65,11 @@ const config = {
   parserOptions: {
     ecmaFeatures: {
       impliedStrict: true,
-      jsx: true,
+      jsx: true
     },
     ecmaVersion: 2020,
     project: './tsconfig.json',
-    sourceType: 'module',
+    sourceType: 'module'
   },
 
   /**
@@ -87,8 +87,8 @@ const config = {
    */
   settings: {
     react: {
-      version: 'detect',
-    },
+      version: 'detect'
+    }
   },
 
   overrides: [
@@ -106,8 +106,8 @@ const config = {
        */
       extends: [
         'plugin:@typescript-eslint/recommended',
-        'plugin:@typescript-eslint/recommended-requiring-type-checking',
-        'prettier/@typescript-eslint',
+        'plugin:@typescript-eslint/recommended-requiring-type-checking'
+        // 'prettier/@typescript-eslint',
       ],
 
       /**
@@ -134,10 +134,10 @@ const config = {
         'react/prop-types': 'off',
         '@typescript-eslint/consistent-type-definitions': ['error', 'type'],
         '@typescript-eslint/explicit-function-return-type': ['error'],
-        '@typescript-eslint/strict-boolean-expressions': 'off',
-      },
-    },
-  ],
+        '@typescript-eslint/strict-boolean-expressions': 'off'
+      }
+    }
+  ]
 }
 
 module.exports = config
