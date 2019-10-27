@@ -8,7 +8,6 @@
   ],
   "imageSize": 100,
   "commit": true,
-  "commitConvention": "gitmoji",
   "contributors": [
     {
       "login": "MartinRosenberg",
