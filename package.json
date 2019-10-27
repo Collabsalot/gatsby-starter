@@ -12,7 +12,7 @@
   "license": "MIT",
   "author": "Martin Rosenberg <Martin.B.Rosenberg@gmail.com> (https://martinbrosenberg.com)",
   "scripts": {
-    "build": "yarn type-check && yarn clean && gatsby build",
+    "build": "yarn clean && gatsby build",
     "clean": "gatsby clean",
     "develop": "gatsby develop",
     "format": "prettier \"**/*.{css,gql,graphql,html,json,md,mdx,sass,scss,toml,yaml,yml}\" --write",
@@ -27,7 +27,7 @@
   },
   "dependencies": {
     "gatsby": "^2.17.4",
-    "gatsby-plugin-typescript": "^2.1.15",
+    "gatsby-plugin-ts": "^2.0.1",
     "react": "^16.11.0",
     "react-dom": "^16.11.0"
   },
@@ -56,6 +56,7 @@
     "husky": "^3.0.9",
     "lint-staged": "^9.4.2",
     "prettier": "^1.18.2",
-    "typescript": "^3.7.1-rc"
+    "typescript": "^3.7.0-dev.20191021",
+    "webpack": "^4.41.2"
   }
 }
