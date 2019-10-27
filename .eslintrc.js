@@ -30,16 +30,16 @@ const config = {
    * @type {string[]}
    */
   extends: [
-    'standard-with-typescript',
     'standard-react',
+    'standard-with-typescript',
     'plugin:import/errors',
     'plugin:import/typescript',
     'plugin:import/warnings',
     'plugin:jsx-a11y/recommended',
-    'plugin:prettier/recommended',
-    'prettier',
-    'prettier/react',
-    'prettier/standard',
+    // 'plugin:prettier/recommended',
+    // 'prettier',
+    // 'prettier/react',
+    // 'prettier/standard',
   ],
 
   /**
@@ -82,6 +82,10 @@ const config = {
    */
   plugins: ['jsx-a11y', 'react'],
 
+  rules: {
+    'comma-dangle': ['error', 'always-multiline'],
+  },
+
   /**
    * @see https://eslint.org/docs/user-guide/configuring#adding-shared-settings
    */
@@ -107,7 +111,7 @@ const config = {
       extends: [
         'plugin:@typescript-eslint/recommended',
         'plugin:@typescript-eslint/recommended-requiring-type-checking',
-        'prettier/@typescript-eslint',
+        // 'prettier/@typescript-eslint',
       ],
 
       /**

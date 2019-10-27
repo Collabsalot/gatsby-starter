@@ -8,7 +8,6 @@ type IndexProps = {
 }
 
 const Index: FC<IndexProps> = ({ data }) => {
-  // eslint-disable-next-line prettier/prettier
   return <div>Hello {data?.site?.siteMetadata?.name ?? 'world'}!</div>
 }
 
