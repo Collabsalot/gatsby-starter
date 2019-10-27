@@ -1,0 +1,12 @@
+# Precious config file with weird comments
+
+tsconfig.json
+
+# Node
+
+node_modules/
+
+# Generated files
+
+.cache/
+public/

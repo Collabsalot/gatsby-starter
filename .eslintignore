@@ -1,0 +1,15 @@
+# Config files
+
+!.eslintrc.js
+!.huskyrc.js
+!.prettierrc.js
+!lint-staged.config.js
+
+# Node
+
+node_modules/
+
+# Generated files
+
+.cache/
+public/
