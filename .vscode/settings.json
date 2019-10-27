@@ -1,0 +1,10 @@
+{
+  "prettier.quoteProps": "consistent",
+  "prettier.requireConfig": true,
+  "prettier.singleQuote": true,
+  "prettier.semi": false,
+  "prettier.trailingComma": "all",
+  "prettier.arrowParens": "always",
+  "prettier.endOfLine": "lf",
+  "prettier.printWidth": 100
+}
