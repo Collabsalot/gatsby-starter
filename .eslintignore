@@ -1,11 +1,9 @@
 # Config files
 
-!.eslintrc.js
+!config/
 !.huskyrc.js
-!.prettierrc.js
-!lint-staged.config.js
 
-# Node
+# Dependencies
 
 node_modules/
 

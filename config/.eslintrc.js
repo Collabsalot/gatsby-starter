@@ -4,7 +4,6 @@
  * into it for yourself: https://www.gatsbyjs.org/packages/gatsby-plugin-eslint/
  *
  * @see https://eslint.org/docs/user-guide/configuring
- * @todo Put this in ./config if you can get that working with eslint-prettier.
  */
 const config = {
   /**
@@ -84,6 +83,7 @@ const config = {
 
   rules: {
     'comma-dangle': ['error', 'always-multiline'],
+    // 'prettier/prettier': ['error', require('.prettierrc.js')],
   },
 
   /**
