@@ -66,6 +66,17 @@ export type InternalFilterInput = {
   type?: Maybe<StringQueryOperatorInput>,
 };
 
+export type IntQueryOperatorInput = {
+  eq?: Maybe<Scalars['Int']>,
+  ne?: Maybe<Scalars['Int']>,
+  gt?: Maybe<Scalars['Int']>,
+  gte?: Maybe<Scalars['Int']>,
+  lt?: Maybe<Scalars['Int']>,
+  lte?: Maybe<Scalars['Int']>,
+  in?: Maybe<Array<Maybe<Scalars['Int']>>>,
+  nin?: Maybe<Array<Maybe<Scalars['Int']>>>,
+};
+
 
 /** Node Interface */
 export type Node = {
@@ -139,6 +150,8 @@ export type QuerySitePluginArgs = {
   version?: Maybe<StringQueryOperatorInput>,
   pluginOptions?: Maybe<SitePluginPluginOptionsFilterInput>,
   nodeAPIs?: Maybe<StringQueryOperatorInput>,
+  browserAPIs?: Maybe<StringQueryOperatorInput>,
+  ssrAPIs?: Maybe<StringQueryOperatorInput>,
   pluginFilepath?: Maybe<StringQueryOperatorInput>,
   packageJson?: Maybe<SitePluginPackageJsonFilterInput>
 };
@@ -158,6 +171,8 @@ export type QuerySiteArgs = {
   children?: Maybe<NodeFilterListInput>,
   internal?: Maybe<InternalFilterInput>,
   siteMetadata?: Maybe<SiteSiteMetadataFilterInput>,
+  port?: Maybe<IntQueryOperatorInput>,
+  host?: Maybe<StringQueryOperatorInput>,
   polyfill?: Maybe<BooleanQueryOperatorInput>,
   pathPrefix?: Maybe<StringQueryOperatorInput>,
   buildTime?: Maybe<DateQueryOperatorInput>
@@ -177,6 +192,8 @@ export type Site = Node & {
   children: Array<Node>,
   internal: Internal,
   siteMetadata?: Maybe<SiteSiteMetadata>,
+  port?: Maybe<Scalars['Int']>,
+  host?: Maybe<Scalars['String']>,
   polyfill?: Maybe<Scalars['Boolean']>,
   pathPrefix?: Maybe<Scalars['String']>,
   buildTime?: Maybe<Scalars['Date']>,
@@ -305,6 +322,8 @@ export type SiteFieldsEnum =
   'internal___owner' |
   'internal___type' |
   'siteMetadata___name' |
+  'port' |
+  'host' |
   'polyfill' |
   'pathPrefix' |
   'buildTime';
@@ -315,6 +334,8 @@ export type SiteFilterInput = {
   children?: Maybe<NodeFilterListInput>,
   internal?: Maybe<InternalFilterInput>,
   siteMetadata?: Maybe<SiteSiteMetadataFilterInput>,
+  port?: Maybe<IntQueryOperatorInput>,
+  host?: Maybe<StringQueryOperatorInput>,
   polyfill?: Maybe<BooleanQueryOperatorInput>,
   pathPrefix?: Maybe<StringQueryOperatorInput>,
   buildTime?: Maybe<DateQueryOperatorInput>,
@@ -506,9 +527,22 @@ export type SitePageFieldsEnum =
   'pluginCreator___version' |
   'pluginCreator___pluginOptions___fileName' |
   'pluginCreator___pluginOptions___forkTsCheckerPlugin___eslint' |
+  'pluginCreator___pluginOptions___name' |
+  'pluginCreator___pluginOptions___short_name' |
+  'pluginCreator___pluginOptions___description' |
+  'pluginCreator___pluginOptions___categories' |
+  'pluginCreator___pluginOptions___start_url' |
+  'pluginCreator___pluginOptions___background_color' |
+  'pluginCreator___pluginOptions___theme_color' |
+  'pluginCreator___pluginOptions___display' |
+  'pluginCreator___pluginOptions___icon' |
+  'pluginCreator___pluginOptions___lang' |
+  'pluginCreator___pluginOptions___dir' |
   'pluginCreator___pluginOptions___path' |
   'pluginCreator___pluginOptions___pathCheck' |
   'pluginCreator___nodeAPIs' |
+  'pluginCreator___browserAPIs' |
+  'pluginCreator___ssrAPIs' |
   'pluginCreator___pluginFilepath' |
   'pluginCreator___packageJson___name' |
   'pluginCreator___packageJson___description' |
@@ -568,6 +602,8 @@ export type SitePlugin = Node & {
   version?: Maybe<Scalars['String']>,
   pluginOptions?: Maybe<SitePluginPluginOptions>,
   nodeAPIs?: Maybe<Array<Maybe<Scalars['String']>>>,
+  browserAPIs?: Maybe<Array<Maybe<Scalars['String']>>>,
+  ssrAPIs?: Maybe<Array<Maybe<Scalars['String']>>>,
   pluginFilepath?: Maybe<Scalars['String']>,
   packageJson?: Maybe<SitePluginPackageJson>,
 };
@@ -691,9 +727,22 @@ export type SitePluginFieldsEnum =
   'version' |
   'pluginOptions___fileName' |
   'pluginOptions___forkTsCheckerPlugin___eslint' |
+  'pluginOptions___name' |
+  'pluginOptions___short_name' |
+  'pluginOptions___description' |
+  'pluginOptions___categories' |
+  'pluginOptions___start_url' |
+  'pluginOptions___background_color' |
+  'pluginOptions___theme_color' |
+  'pluginOptions___display' |
+  'pluginOptions___icon' |
+  'pluginOptions___lang' |
+  'pluginOptions___dir' |
   'pluginOptions___path' |
   'pluginOptions___pathCheck' |
   'nodeAPIs' |
+  'browserAPIs' |
+  'ssrAPIs' |
   'pluginFilepath' |
   'packageJson___name' |
   'packageJson___description' |
@@ -722,6 +771,8 @@ export type SitePluginFilterInput = {
   version?: Maybe<StringQueryOperatorInput>,
   pluginOptions?: Maybe<SitePluginPluginOptionsFilterInput>,
   nodeAPIs?: Maybe<StringQueryOperatorInput>,
+  browserAPIs?: Maybe<StringQueryOperatorInput>,
+  ssrAPIs?: Maybe<StringQueryOperatorInput>,
   pluginFilepath?: Maybe<StringQueryOperatorInput>,
   packageJson?: Maybe<SitePluginPackageJsonFilterInput>,
 };
@@ -806,6 +857,17 @@ export type SitePluginPackageJsonPeerDependenciesFilterListInput = {
 export type SitePluginPluginOptions = {
   fileName?: Maybe<Scalars['String']>,
   forkTsCheckerPlugin?: Maybe<SitePluginPluginOptionsForkTsCheckerPlugin>,
+  name?: Maybe<Scalars['String']>,
+  short_name?: Maybe<Scalars['String']>,
+  description?: Maybe<Scalars['String']>,
+  categories?: Maybe<Array<Maybe<Scalars['String']>>>,
+  start_url?: Maybe<Scalars['String']>,
+  background_color?: Maybe<Scalars['String']>,
+  theme_color?: Maybe<Scalars['String']>,
+  display?: Maybe<Scalars['String']>,
+  icon?: Maybe<Scalars['String']>,
+  lang?: Maybe<Scalars['String']>,
+  dir?: Maybe<Scalars['String']>,
   path?: Maybe<Scalars['String']>,
   pathCheck?: Maybe<Scalars['Boolean']>,
 };
@@ -813,6 +875,17 @@ export type SitePluginPluginOptions = {
 export type SitePluginPluginOptionsFilterInput = {
   fileName?: Maybe<StringQueryOperatorInput>,
   forkTsCheckerPlugin?: Maybe<SitePluginPluginOptionsForkTsCheckerPluginFilterInput>,
+  name?: Maybe<StringQueryOperatorInput>,
+  short_name?: Maybe<StringQueryOperatorInput>,
+  description?: Maybe<StringQueryOperatorInput>,
+  categories?: Maybe<StringQueryOperatorInput>,
+  start_url?: Maybe<StringQueryOperatorInput>,
+  background_color?: Maybe<StringQueryOperatorInput>,
+  theme_color?: Maybe<StringQueryOperatorInput>,
+  display?: Maybe<StringQueryOperatorInput>,
+  icon?: Maybe<StringQueryOperatorInput>,
+  lang?: Maybe<StringQueryOperatorInput>,
+  dir?: Maybe<StringQueryOperatorInput>,
   path?: Maybe<StringQueryOperatorInput>,
   pathCheck?: Maybe<BooleanQueryOperatorInput>,
 };
