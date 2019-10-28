@@ -12,6 +12,7 @@
 - [Getting started](#getting-started)
     - [Install](#install)
 - [Contributors](#contributors)
+- [License](#license)
 
 ## Features
 
@@ -74,3 +75,7 @@ Contributions of any kind welcome! Thanks goes to these wonderful people ([emoji
 <!-- prettier-ignore-end -->
 
 <!-- ALL-CONTRIBUTORS-LIST:END -->
+
+## License
+
+This starter is © 2019 Martin Rosenberg. It is available under an [MIT](https://spdx.org/licenses/MIT.html) license, [included](./LICENSE). Any non-software content is available under a [CC-BY-4.0](https://spdx.org/licenses/CC-BY-4.0.html) license. Use it all in good health, and let me know if you'd like me to showcase anything you create with it!
