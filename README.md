@@ -8,12 +8,20 @@
 
 # gatsby-starter
 
+- [Features](#features)
+- [Getting started](#getting-started)
+    - [Install](#install)
+- [Contributors](#contributors)
+
 ## Features
 
 - TypeScript
 - Auto-generated types from GraphQL
 - Linting with ESLint
 - Formatting with Prettier
+- Pre-commit hooks for linting, formatting, and type-checking
+- PWA (Progressive Web App)
+- Lighthouse CLI
 
 ## Getting started
 
