@@ -6147,6 +6147,11 @@ gatsby-plugin-page-creator@^2.1.27:
     lodash "^4.17.15"
     micromatch "^3.1.10"
 
+gatsby-plugin-react-helmet-async@^1.0.4:
+  version "1.0.4"
+  resolved "https://registry.yarnpkg.com/gatsby-plugin-react-helmet-async/-/gatsby-plugin-react-helmet-async-1.0.4.tgz#fdd7fb12fdc89cc7d20bffa87e3b68ffcda2f37d"
+  integrity sha512-nhn1v89QW17b23qBGRcD4HiBDxthTVwTfse6YePWjjv7oq2ZeEam5W9PkW61GVv03WZ7KjDc5TYxpFKezbklWQ==
+
 gatsby-plugin-ts@^2.0.1:
   version "2.0.1"
   resolved "https://registry.yarnpkg.com/gatsby-plugin-ts/-/gatsby-plugin-ts-2.0.1.tgz#d9fcd77007fbe16b0f2540fad0a5dabe3fc9bf71"
@@ -11056,6 +11061,22 @@ react-error-overlay@^3.0.0:
   resolved "https://registry.yarnpkg.com/react-error-overlay/-/react-error-overlay-3.0.0.tgz#c2bc8f4d91f1375b3dad6d75265d51cd5eeaf655"
   integrity sha512-XzgvowFrwDo6TWcpJ/WTiarb9UI6lhA4PMzS7n1joK3sHfBBBOQHUc0U4u57D6DWO9vHv6lVSWx2Q/Ymfyv4hw==
 
+react-fast-compare@^2.0.4:
+  version "2.0.4"
+  resolved "https://registry.yarnpkg.com/react-fast-compare/-/react-fast-compare-2.0.4.tgz#e84b4d455b0fec113e0402c329352715196f81f9"
+  integrity sha512-suNP+J1VU1MWFKcyt7RtjiSWUjvidmQSlqu+eHslq+342xCbGTYmC0mEhPCOHxlW0CywylOC1u2DFAT+bv4dBw==
+
+react-helmet-async@^1.0.4:
+  version "1.0.4"
+  resolved "https://registry.yarnpkg.com/react-helmet-async/-/react-helmet-async-1.0.4.tgz#079ef10b7fefcaee6240fefd150711e62463cc97"
+  integrity sha512-KTGHE9sz8N7+fCkZ2a3vzXH9eIkiTNhL2NhKR7XzzQl3WsGlCHh76arauJUIiGdfhjeMp7DY7PkASAmYFXeJYg==
+  dependencies:
+    "@babel/runtime" "^7.3.4"
+    invariant "^2.2.4"
+    prop-types "^15.7.2"
+    react-fast-compare "^2.0.4"
+    shallowequal "^1.1.0"
+
 react-hot-loader@^4.12.15:
   version "4.12.15"
   resolved "https://registry.yarnpkg.com/react-hot-loader/-/react-hot-loader-4.12.15.tgz#6bf3984e52edbdf02ea8952777f53da1b3c68c95"
@@ -12199,6 +12220,19 @@ sort-keys@^2.0.0:
   integrity sha1-ZYU1WEhh7JfXMNbPQYIuH1ZoQSg=
   dependencies:
     is-plain-obj "^1.0.0"
+
+sort-object-keys@^1.1.2:
+  version "1.1.2"
+  resolved "https://registry.yarnpkg.com/sort-object-keys/-/sort-object-keys-1.1.2.tgz#d3a6c48dc2ac97e6bc94367696e03f6d09d37952"
+  integrity sha1-06bEjcKsl+a8lDZ2luA/bQnTeVI=
+
+sort-package-json@^1.22.1:
+  version "1.22.1"
+  resolved "https://registry.yarnpkg.com/sort-package-json/-/sort-package-json-1.22.1.tgz#384ce7a098cd13be4109800d5ce2f0cf7826052e"
+  integrity sha512-uVINQraFQvnlzNHFnQOT4MYy0qonIEzKwhrI2yrTiQjNo5QF4h3ffrnCk7a95QAwoK/RdkO/w8W9tJIcaOWC7g==
+  dependencies:
+    detect-indent "^5.0.0"
+    sort-object-keys "^1.1.2"
 
 source-list-map@^2.0.0:
   version "2.0.1"

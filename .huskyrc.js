@@ -8,6 +8,7 @@ const hooks = {
   'pre-commit': scripts(
     'yarn type-check',
     'lint-staged',
+    'sort-package-json',
   ),
 }
 
