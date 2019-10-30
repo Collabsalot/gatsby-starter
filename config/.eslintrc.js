@@ -17,15 +17,11 @@ const config = {
   },
 
   /**
-   * Keep the `prettier` ones in order, after everything else.
-   *
    * @see https://eslint.org/docs/user-guide/configuring#extending-configuration-files
-   * @see https://github.com/prettier/eslint-config-prettier
    * @see https://github.com/standard/eslint-config-standard-react
    * @see https://github.com/standard/eslint-config-standard-with-typescript
    * @see https://github.com/benmosher/eslint-plugin-import
    * @see https://github.com/evcohen/eslint-plugin-jsx-a11y
-   * @see https://github.com/prettier/eslint-plugin-prettier
    * @type {string[]}
    */
   extends: [
@@ -35,10 +31,6 @@ const config = {
     'plugin:import/typescript',
     'plugin:import/warnings',
     'plugin:jsx-a11y/recommended',
-    // 'plugin:prettier/recommended',
-    // 'prettier',
-    // 'prettier/react',
-    // 'prettier/standard',
   ],
 
   /**
@@ -74,7 +66,6 @@ const config = {
   /**
    * @see https://eslint.org/docs/user-guide/configuring#configuring-plugins
    * @see https://github.com/evcohen/eslint-plugin-jsx-a11y
-   * @see https://github.com/prettier/eslint-plugin-prettier
    * @see https://github.com/yannickcr/eslint-plugin-react
    * @see https://github.com/standard/eslint-plugin-standard
    * @type {string[]}
@@ -83,7 +74,6 @@ const config = {
 
   rules: {
     'comma-dangle': ['error', 'always-multiline'],
-    // 'prettier/prettier': ['error', require('.prettierrc.js')],
   },
 
   /**
@@ -105,13 +95,11 @@ const config = {
       /**
        * @see https://eslint.org/docs/user-guide/configuring#extending-configuration-files
        * @see https://www.npmjs.com/package/@typescript-eslint/eslint-plugin
-       * @see https://github.com/prettier/eslint-config-prettier
        * @type {string[]}
        */
       extends: [
         'plugin:@typescript-eslint/recommended',
         'plugin:@typescript-eslint/recommended-requiring-type-checking',
-        // 'prettier/@typescript-eslint',
       ],
 
       /**
