@@ -1,12 +1,21 @@
-# Precious config file with weird comments
+### Config files
+# This is a special snowflake with fancy-schmancy comments that Prettier ruins.
 
 tsconfig.json
 
-# Dependencies
+### Generated files
+# Please don't bother formatting these.
+
+## Dependencies
 
 node_modules/
 
-# Generated files
+## Editors
+
+.idea/
+.vscode/
+
+## Gatsby
 
 .cache/
 @types/

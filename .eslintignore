@@ -1,13 +1,19 @@
-# Config files
+### Config files
+# These aren't always linted by default, but they should be.
 
-!config/
+!.eslintrc.js
 !.huskyrc.js
+!babel.config.js
+!lint-staged.config.js
 
-# Dependencies
+### Generated files
+# Please don't make me fix these.
+
+## Dependencies
 
 node_modules/
 
-# Generated files
+## Gatsby
 
 .cache/
 @types/
