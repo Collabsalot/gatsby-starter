@@ -1,4 +1,11 @@
 /**
+ * @see https://github.com/Collabsalot/gatsby-plugin-react-helmet-async
+ */
+const pluginReactHelmetAsync = {
+  resolve: 'gatsby-plugin-react-helmet-async',
+}
+
+/**
  * This plugin also includes `gatsby-plugin-graphql-codegen`.
  *
  * @see https://www.gatsbyjs.org/packages/gatsby-plugin-ts/
@@ -61,6 +68,7 @@ const pluginOffline = {
  * @see https://www.gatsbyjs.org/docs/plugins
  */
 const plugins = [
+  pluginReactHelmetAsync,
   pluginTs,
   ...[pluginManifest, pluginOffline],
 ]
