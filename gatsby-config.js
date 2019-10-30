@@ -7,6 +7,6 @@ const siteMetadata = {
 }
 
 module.exports = {
-  plugins: require('./config/gatsby-config-plugins'),
+  plugins: require('./gatsby/gatsby-config-plugins'),
   siteMetadata,
 }

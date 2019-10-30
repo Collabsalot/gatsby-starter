@@ -1,5 +1,3 @@
-const LINT_STAGED_CONFIG = './config/lint-staged.config.js'
-
 const scripts = (...arr) => arr.join(' && ')
 
 /**
@@ -9,7 +7,7 @@ const scripts = (...arr) => arr.join(' && ')
 const hooks = {
   'pre-commit': scripts(
     'yarn type-check',
-    `lint-staged --config ${LINT_STAGED_CONFIG}`,
+    'lint-staged',
   ),
 }
 
