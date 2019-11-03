@@ -31,6 +31,7 @@
     "gatsby-plugin-offline": "^3.0.16",
     "gatsby-plugin-react-helmet-async": "^1.0.4",
     "gatsby-plugin-ts": "^2.0.1",
+    "gatsby-source-filesystem": "^2.1.35",
     "react": "^16.11.0",
     "react-dom": "^16.11.0",
     "react-helmet-async": "^1.0.4"
@@ -62,7 +63,11 @@
     "lint-staged": "^10.0.0-1",
     "prettier": "^1.18.2",
     "sort-package-json": "^1.22.1",
-    "typescript": "^3.7.0-dev.20191021",
+    "typescript": "^3.7.1-rc",
     "webpack": "^4.41.2"
+  },
+  "engines": {
+    "node": "12.x",
+    "yarn": "1.x"
   }
 }

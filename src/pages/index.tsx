@@ -8,7 +8,7 @@ type IndexProps = {
 }
 
 const Index: FC<IndexProps> = ({ data }) => {
-  return <div>Hello {data.site?.siteMetadata?.name ?? 'world'}!</div>
+  return <div>Hello {data.site?.siteMetadata?.name ?? `world`}!</div>
 }
 
 export const pageQuery = graphql`
