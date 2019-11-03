@@ -1,8 +1,19 @@
 /**
+ * @see https://www.gatsbyjs.org/packages/gatsby-source-filesystem/
+ */
+const sourceFilesystem = kind => ({
+  resolve: `gatsby-source-filesystem`,
+  options: {
+    name: kind,
+    path: `${__dirname}/../content/${kind}/`,
+  },
+})
+
+/**
  * @see https://github.com/Collabsalot/gatsby-plugin-react-helmet-async
  */
 const pluginReactHelmetAsync = {
-  resolve: 'gatsby-plugin-react-helmet-async',
+  resolve: `gatsby-plugin-react-helmet-async`,
 }
 
 /**
@@ -12,14 +23,14 @@ const pluginReactHelmetAsync = {
  * @see https://www.gatsbyjs.org/packages/gatsby-plugin-graphql-codegen/
  */
 const pluginTs = {
-  resolve: 'gatsby-plugin-ts',
+  resolve: `gatsby-plugin-ts`,
   options: {
     /** This cannot be in `src/` or it will cause an infinite loop. */
-    fileName: '@types/graphql.ts',
+    fileName: `@types/graphql.ts`,
 
     /** @see https://github.com/TypeStrong/fork-ts-checker-webpack-plugin#options */
     forkTsCheckerPlugin: {
-      eslint: true,
+      // eslint: true,
     },
 
     /** @see https://github.com/TypeStrong/ts-loader#options */
@@ -33,21 +44,21 @@ const pluginTs = {
  * @see https://developer.mozilla.org/en-US/docs/Web/Manifest
  */
 const pluginManifest = {
-  resolve: 'gatsby-plugin-manifest',
+  resolve: `gatsby-plugin-manifest`,
   options: {
-    name: 'gatsby-starter',
-    short_name: 'starter',
-    description: 'The bestest websitiest starter',
-    categories: ['music', 'lifestyle'],
+    name: `gatsby-starter`,
+    short_name: `starter`,
+    description: `The bestest websitiest starter`,
+    categories: [`music`, `lifestyle`],
     // App appearance
-    start_url: '/',
-    background_color: '#ffffff',
-    theme_color: '#f6c957',
-    display: 'standalone',
-    icon: 'src/assets/icon.png', // Relative to the root of the site
+    start_url: `/`,
+    background_color: `#ffffff`,
+    theme_color: `#f6c957`,
+    display: `standalone`,
+    icon: `src/assets/icon.png`, // Relative to the root of the site
     // Language
-    lang: 'en',
-    dir: 'auto',
+    lang: `en`,
+    dir: `auto`,
     localize: [],
   },
 }
@@ -57,7 +68,7 @@ const pluginManifest = {
  * @see https://gatsby.dev/offline
  */
 const pluginOffline = {
-  resolve: 'gatsby-plugin-offline',
+  resolve: `gatsby-plugin-offline`,
   options: {},
 }
 
@@ -68,6 +79,8 @@ const pluginOffline = {
  * @see https://www.gatsbyjs.org/docs/plugins
  */
 const plugins = [
+  sourceFilesystem(`pages`),
+  sourceFilesystem(`posts`),
   pluginReactHelmetAsync,
   pluginTs,
   ...[pluginManifest, pluginOffline],

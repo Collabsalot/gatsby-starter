@@ -3,10 +3,10 @@
  */
 
 const siteMetadata = {
-  name: 'Steve Austin',
+  name: `Steve Austin`,
 }
 
 module.exports = {
-  plugins: require('./gatsby/gatsby-config-plugins'),
+  plugins: require(`./gatsby/gatsby-config-plugins`),
   siteMetadata,
 }

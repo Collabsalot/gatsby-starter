@@ -1,10 +1,7 @@
 {
-  "prettier.quoteProps": "consistent",
-  "prettier.requireConfig": true,
-  "prettier.singleQuote": true,
-  "prettier.semi": false,
-  "prettier.trailingComma": "all",
-  "prettier.arrowParens": "always",
-  "prettier.endOfLine": "lf",
-  "prettier.printWidth": 100
+  "typescript.tsdk": "node_modules/typescript/lib",
+  "cSpell.words": [
+    "gmail",
+    "nullish"
+  ]
 }
