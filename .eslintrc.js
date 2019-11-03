@@ -1,3 +1,6 @@
+const ERROR = `error`
+const OFF = `off`
+
 /**
  * Not using `gatsby-plugin-eslint`, as it's outdated and doesn't really
  * accomplish anything that hasn't been taken care of already. Feel free to look
@@ -25,12 +28,12 @@ const config = {
    * @type {string[]}
    */
   extends: [
-    'standard-react',
-    'standard-with-typescript',
-    'plugin:import/errors',
-    'plugin:import/typescript',
-    'plugin:import/warnings',
-    'plugin:jsx-a11y/recommended',
+    `standard-react`,
+    `standard-with-typescript`,
+    `plugin:import/errors`,
+    `plugin:import/typescript`,
+    `plugin:import/warnings`,
+    `plugin:jsx-a11y/recommended`,
   ],
 
   /**
@@ -39,8 +42,8 @@ const config = {
    */
   globals: {
     __PATH_PREFIX__: true,
-    Atomics: 'readonly',
-    SharedArrayBuffer: 'readonly',
+    Atomics: `readonly`,
+    SharedArrayBuffer: `readonly`,
   },
 
   /**
@@ -48,7 +51,7 @@ const config = {
    * @see https://github.com/babel/babel-eslint
    * @type {string}
    */
-  parser: 'babel-eslint',
+  parser: `babel-eslint`,
 
   /**
    * @see https://eslint.org/docs/user-guide/configuring#specifying-parser-options
@@ -59,8 +62,8 @@ const config = {
       jsx: true,
     },
     ecmaVersion: 2020,
-    project: './tsconfig.json',
-    sourceType: 'module',
+    project: `./tsconfig.json`,
+    sourceType: `module`,
   },
 
   /**
@@ -70,10 +73,12 @@ const config = {
    * @see https://github.com/standard/eslint-plugin-standard
    * @type {string[]}
    */
-  plugins: ['jsx-a11y', 'react'],
+  plugins: [`jsx-a11y`, `react`],
 
   rules: {
-    'comma-dangle': ['error', 'always-multiline'],
+    'comma-dangle': [ERROR, `always-multiline`],
+    'quote-props': [ERROR, `consistent-as-needed`],
+    'quotes': [ERROR, `backtick`, { avoidEscape: true }],
   },
 
   /**
@@ -81,7 +86,7 @@ const config = {
    */
   settings: {
     react: {
-      version: 'detect',
+      version: `detect`,
     },
   },
 
@@ -90,7 +95,7 @@ const config = {
       /**
        * @type {string[]}
        */
-      files: ['*.ts', '*.tsx'],
+      files: [`*.ts`, `*.tsx`],
 
       /**
        * @see https://eslint.org/docs/user-guide/configuring#extending-configuration-files
@@ -98,8 +103,8 @@ const config = {
        * @type {string[]}
        */
       extends: [
-        'plugin:@typescript-eslint/recommended',
-        'plugin:@typescript-eslint/recommended-requiring-type-checking',
+        `plugin:@typescript-eslint/recommended`,
+        `plugin:@typescript-eslint/recommended-requiring-type-checking`,
       ],
 
       /**
@@ -107,14 +112,14 @@ const config = {
        * @see https://www.npmjs.com/package/@typescript-eslint/parser
        * @type {string}
        */
-      parser: '@typescript-eslint/parser',
+      parser: `@typescript-eslint/parser`,
 
       /**
        * @see https://eslint.org/docs/user-guide/configuring#configuring-plugins
        * @see https://www.npmjs.com/package/@typescript-eslint/eslint-plugin
        * @type {string[]}
        */
-      plugins: ['@typescript-eslint'],
+      plugins: [`@typescript-eslint`],
 
       /**
        * @see https://eslint.org/docs/user-guide/configuring#configuring-rules
@@ -123,10 +128,10 @@ const config = {
        * @type {Object.<string, any>}
        */
       rules: {
-        'react/prop-types': 'off',
-        '@typescript-eslint/consistent-type-definitions': ['error', 'type'],
-        '@typescript-eslint/explicit-function-return-type': ['error'],
-        '@typescript-eslint/strict-boolean-expressions': 'off',
+        'react/prop-types': OFF,
+        '@typescript-eslint/consistent-type-definitions': [ERROR, `type`],
+        '@typescript-eslint/explicit-function-return-type': ERROR,
+        '@typescript-eslint/strict-boolean-expressions': OFF,
       },
     },
   ],
